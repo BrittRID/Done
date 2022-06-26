@@ -1,0 +1,69 @@
+﻿@model Project1.Models.ProCodes
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ProCodes</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Total1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Total1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oasys)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oasys)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AirOptix)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AirOptix)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BioTrue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BioTrue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BiofinityToric)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BiofinityToric)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACVita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACVita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MyDay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MyDay)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.proclear)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.proclear)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

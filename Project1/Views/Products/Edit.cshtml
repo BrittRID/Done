@@ -48,11 +48,49 @@
                 <input asp-for="ZipCode" class="form-control" />
                 <span asp-validation-for="ZipCode" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Brand" class="control-label"></label>
                 <input asp-for="Brand" class="form-control" />
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
+
+           @* @{
+            string day=DateTime.Now.DayOfWeek.ToString();
+            switch(day)
+            {
+                case "Total1":
+                Dia = 14.2  B.C 8.6 
+                break;
+ 
+                case "Tuesday":
+                <h3>It's Tuesday</h3>
+                break;
+ 
+                case "Wednesday":
+                <h3>It's Wednesday</h3>
+                break;
+ 
+                case "Thursday":
+                <h3>It's Thursday</h3>
+                break;
+ 
+                case "Friday":
+                <h3>It's Friday</h3>
+                break;
+ 
+                case "Saturday":
+                <h3>It's Saturday</h3>
+                break;
+ 
+                case "Sunday":
+                <h3>It's Sunday</h3>
+                break;
+ 
+                default:
+                <h3>What! Ok! Its Funday</h3>
+                break;
+            }*@
             <div class="form-group">
                 <label asp-for="Sphere" class="control-label"></label>
                 <input asp-for="Sphere" class="form-control" />

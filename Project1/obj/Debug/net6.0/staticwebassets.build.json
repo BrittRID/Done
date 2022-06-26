@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+hkHkTK9i5IX9jbzw3o65Tzp2SyENg8kFONGV5uAFhc=",
+  "Hash": "0CuAfs2goCZjG2fkwsMXmMAphL49WgyheZSmH5lL92s=",
   "Source": "Project1",
   "BasePath": "_content/Project1",
   "Mode": "Default",
@@ -1069,6 +1069,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\britt\\Desktop\\Repos\\Project1\\Project1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Project1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\britt\\Desktop\\Repos\\Project1\\Project1\\wwwroot\\css\\1000_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg",
+      "SourceId": "Project1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\britt\\Desktop\\Repos\\Project1\\Project1\\wwwroot\\",
+      "BasePath": "_content/Project1",
+      "RelativePath": "css/1000_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\1000_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\britt\\Desktop\\Repos\\Project1\\Project1\\wwwroot\\css\\Lens.png",
+      "SourceId": "Project1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\britt\\Desktop\\Repos\\Project1\\Project1\\wwwroot\\",
+      "BasePath": "_content/Project1",
+      "RelativePath": "css/Lens.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Lens.png"
     },
     {
       "Identity": "C:\\Users\\britt\\Desktop\\Repos\\Project1\\Project1\\wwwroot\\css\\site.css",

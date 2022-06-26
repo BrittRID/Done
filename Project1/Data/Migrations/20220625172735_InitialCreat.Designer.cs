@@ -12,8 +12,8 @@ using Project1.Data;
 namespace Project1.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220618183033_Initialsetup")]
-    partial class Initialsetup
+    [Migration("20220625172735_InitialCreat")]
+    partial class InitialCreat
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -247,6 +247,43 @@ namespace Project1.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("Project1.Models.ProCodes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ACVita")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AirOptix")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BioTrue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BiofinityToric")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MyDay")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Oasys")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Total1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("proclear")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProCodes");
                 });
 
             modelBuilder.Entity("Project1.Models.Products", b =>

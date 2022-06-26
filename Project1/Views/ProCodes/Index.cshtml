@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Project1.Models.ProCodes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Total1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oasys)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirOptix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BioTrue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BiofinityToric)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACVita)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.proclear)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Oasys)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AirOptix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BioTrue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BiofinityToric)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACVita)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.proclear)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

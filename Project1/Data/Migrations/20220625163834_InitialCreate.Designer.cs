@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Project1.Data;
 
@@ -11,9 +12,10 @@ using Project1.Data;
 namespace Project1.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220625163834_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -245,43 +247,6 @@ namespace Project1.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Order");
-                });
-
-            modelBuilder.Entity("Project1.Models.ProCodes", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("ACVita")
-                        .HasColumnType("int");
-
-                    b.Property<int>("AirOptix")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BioTrue")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BiofinityToric")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MyDay")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Oasys")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Total1")
-                        .HasColumnType("int");
-
-                    b.Property<int>("proclear")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProCodes");
                 });
 
             modelBuilder.Entity("Project1.Models.Products", b =>

@@ -12,5 +12,6 @@ namespace Project1.Data
         }
         public DbSet<Project1.Models.Products>? Products { get; set; }
         public DbSet<Project1.Models.Order>? Order { get; set; }
+        public DbSet<Project1.Models.ProCodes>? ProCodes { get; set; }
     }
 }

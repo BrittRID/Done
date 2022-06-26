@@ -173,6 +173,7 @@
                   </div>
             </div>
            <div class="form-group">
+               <div class="split left">                         
                 <label asp-for="Cylinder" class="control-label"></label>                 
                 @*<input asp-for="Cylinder" class="form-control" />*@                 
                 @* <input asp-for="Sphere" class="form-control" type="text" list="sphere" /> *@                            
@@ -219,7 +220,9 @@
                                             <option >-7.00</option>
                                             <option >-7.25</option>
                 <span asp-validation-for="Cylinder" class="text-danger"></span>
-                </datalist>
+                </datalist>             
+               
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="Axis" class="control-label"></label> 
@@ -264,8 +267,7 @@
             </div>
             <br />
              <div class="form-group">
-                <div class="split right">
-                    <div class="centered">
+                <div class="split right">                  
                       
                 <label asp-for="Sphere" class="control-label"></label>
                 @*<input asp-for="Sphere" class="form-control" />*@                
@@ -313,8 +315,7 @@
                      <option >-7.25</option>
                     </datalist>
                     <span asp-validation-for="Sphere" class="text-danger"></span>
-                    </div>
-                  </div>
+                    </div>                  
             </div>         
             <div class="form-group">
                 <label asp-for="Cyl" class="control-label"></label>                 
@@ -405,6 +406,14 @@
                 <input asp-for="Diameter" class="form-control" />
                 <span asp-validation-for="Diameter" class="text-danger"></span>
             </div>
+
+            <br />
+            <div>
+                <h2>
+                    Supply
+                </h2>
+            </div>
+            <br />
             <div class="form-group">
                 <label asp-for="Qty" class="control-label"></label>
                 <input asp-for="Qty" class="form-control" />
@@ -416,7 +425,6 @@
         </form>
     </div>
 </div>
-
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
