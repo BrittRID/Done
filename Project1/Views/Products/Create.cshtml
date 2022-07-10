@@ -113,6 +113,17 @@
                  </datalist>
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>             
+           @* @{
+            string Brand=Optionsvalue.Now.DayOfWeek.ToString();
+            switch(Brand)
+            {
+                case "1 Day Moist":
+               <input asp-for="BC" value="8.6"/>
+               <input asp-for="Diameter" default="14.2"/>
+                break; 
+                default:               
+                break;
+            }*@
             <br />
             <div>
                 <h2>
