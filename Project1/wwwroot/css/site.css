@@ -59,5 +59,15 @@ body {
    box-shadow: 0 0 5px #ffd800;
 }
 
+.centered {
+    border: 2px solid #8f8ea9;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: subgrid;
+    
+}
+
 
 

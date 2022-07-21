@@ -13,32 +13,46 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                  <div class="centered">
                 <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
                 <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                
             </div>
             <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
+               <div class="centered">
+                   <label asp-for="LastName" class="control-label"></label>
                 <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                
             </div>
             <div class="form-group">
-                <label asp-for="DOB" class="control-label"></label>
+                <div class="centered">
+                     <label asp-for="DOB" class="control-label"></label>
                 <input asp-for="DOB" class="form-control" />
                 <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+                
             </div>
             <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
+            <div class="centered">
+                    <label asp-for="Address" class="control-label"></label>
                 <input asp-for="Address" class="form-control" />
                 <span asp-validation-for="Address" class="text-danger"></span>
+               </div>
             </div>
             <div class="form-group">
-                <label asp-for="City" class="control-label"></label>
+           <div class="centered">
+                    <label asp-for="City" class="control-label"></label>
                 <input asp-for="City" class="form-control" />
                 <span asp-validation-for="City" class="text-danger"></span>
+               </div>
             </div>
             <div class="form-group">
-                <label asp-for="State" class="control-label"></label>
+              <div class="centered">
+                  <label asp-for="State" class="control-label"></label>
                 @*<input asp-for="State" class="form-control" />*@
                  <input asp-for="State" class="form-control" type="text" list="state" />
                  <datalist id="state">               
@@ -95,14 +109,20 @@
 	            <option value="WY">Wyoming</option>
                  </datalist>
                 <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+                
             </div>         
             <div class="form-group">
-                <label asp-for="ZipCode" class="control-label"></label>
+               <div class="centered">
+                    <label asp-for="ZipCode" class="control-label"></label>
                 <input asp-for="ZipCode" class="form-control" />
                 <span asp-validation-for="ZipCode" class="text-danger"></span>
+                </div>
+               
             </div>
-           <div class="form-group">                
-                <label asp-for="Brand" class="control-label"></label>  
+           <div class="form-group">
+              <div class="centered">
+                   <label asp-for="Brand" class="control-label"></label>  
                  
                  <input asp-for="Brand" class="form-control" type="text" list="brand" />
                  <datalist id="brand">
@@ -112,18 +132,10 @@
                  <option value="1 Day Oasys">1 Day Oasys</option>
                  </datalist>
                 <span asp-validation-for="Brand" class="text-danger"></span>
+               </div>
+               
             </div>             
-           @* @{
-            string Brand=Optionsvalue.Now.DayOfWeek.ToString();
-            switch(Brand)
-            {
-                case "1 Day Moist":
-               <input asp-for="BC" value="8.6"/>
-               <input asp-for="Diameter" default="14.2"/>
-                break; 
-                default:               
-                break;
-            }*@
+           
             <br />
             <div>
                 <h2>
@@ -184,7 +196,7 @@
                   </div>
             </div>
            <div class="form-group">
-               <div class="split left">                         
+               <div class="centered">                         
                 <label asp-for="Cylinder" class="control-label"></label>                 
                 @*<input asp-for="Cylinder" class="form-control" />*@                 
                 @* <input asp-for="Sphere" class="form-control" type="text" list="sphere" /> *@                            
@@ -236,7 +248,8 @@
                 </div>
             </div>
             <div class="form-group">
-                <label asp-for="Axis" class="control-label"></label> 
+                <div class="centered">
+                    <label asp-for="Axis" class="control-label"></label> 
                @* <input asp-for="Axis" class="form-control" />*@
                <input asp-for="Axis" class="form-control" type="text" list="axis" />
                <datalist id="axis">                                        
@@ -259,16 +272,21 @@
                                             <option >180</option>
                    </datalist>
                 <span asp-validation-for="Axis" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
-                <label asp-for="BaseCurve" class="control-label"></label>
+                <div class="centered">
+                    <label asp-for="BaseCurve" class="control-label"></label>
                 <input asp-for="BaseCurve" class="form-control" />
                 <span asp-validation-for="BaseCurve" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
-                <label asp-for="Dia" class="control-label"></label>
+                <div class="centered">
+                    <label asp-for="Dia" class="control-label"></label>
                 <input asp-for="Dia" class="form-control" />
                 <span asp-validation-for="Dia" class="text-danger"></span>
+                </div>
             </div>
             <br />
              <div>
@@ -278,8 +296,7 @@
             </div>
             <br />
              <div class="form-group">
-                <div class="split right">                  
-                      
+                <div class="centered">               
                 <label asp-for="Sphere" class="control-label"></label>
                 @*<input asp-for="Sphere" class="form-control" />*@                
                 <input asp-for="Sphere" class="form-control" type="text" list="Sp" />
@@ -329,7 +346,8 @@
                     </div>                  
             </div>         
             <div class="form-group">
-                <label asp-for="Cyl" class="control-label"></label>                 
+              <div class="centered"> 
+                    <label asp-for="Cyl" class="control-label"></label>                 
                 @*<input asp-for="Cylinder" class="form-control" />*@                 
                 @* <input asp-for="Sphere" class="form-control" type="text" list="sphere" /> *@                            
                 <input  asp-for="Cyl" class="form-control" type="text" list="Cy" />
@@ -376,17 +394,20 @@
                                             <option >-7.25</option>
                 <span asp-validation-for="Cylinder" class="text-danger"></span>
                 </datalist>
+                </div>
             </div>
             @*<div class="form-group">
                 <label asp-for="axis1" class="control-label"></label>
                 <input asp-for="axis1" class="form-control" />
                 <span asp-validation-for="axis1" class="text-danger"></span>
             </div>*@
-            <div class="form-group">
-                <label asp-for="axis1" class="control-label"></label> 
+           
+             <div class="form-group">
+                <div class="centered">
+                   <label asp-for="axis1" class="control-label"></label> 
                @* <input asp-for="Axis" class="form-control" />*@
-               <input asp-for="axis1" class="form-control" type="text" list="ax" />
-               <datalist id="ax">                                        
+              <input asp-for="axis1" class="form-control" type="text" list="ax" />
+               <datalist id="ax">                                                                             
                                             <option >010</option>
                                             <option >020</option>
                                             <option >030</option>
@@ -405,17 +426,22 @@
                                             <option >170</option>
                                             <option >180</option>
                    </datalist>
-                <span asp-validation-for="Axis" class="text-danger"></span>
-            </div>
+                 <span asp-validation-for="Axis" class="text-danger"></span>
+                </div>
+                </div>
             <div class="form-group">
-                <label asp-for="BC" class="control-label"></label>
+               <div class="centered">
+                    <label asp-for="BC" class="control-label"></label>
                 <input asp-for="BC" class="form-control" />
                 <span asp-validation-for="BC" class="text-danger"></span>
+               </div>
             </div>
             <div class="form-group">
-                <label asp-for="Diameter" class="control-label"></label>
+                 <div class="centered">
+                    <label asp-for="Diameter" class="control-label"></label>
                 <input asp-for="Diameter" class="form-control" />
                 <span asp-validation-for="Diameter" class="text-danger"></span>
+                </div>
             </div>
 
             <br />
@@ -426,9 +452,11 @@
             </div>
             <br />
             <div class="form-group">
-                <label asp-for="Qty" class="control-label"></label>
+                 <div class="centered">
+                    <label asp-for="Qty" class="control-label"></label>
                 <input asp-for="Qty" class="form-control" />
                 <span asp-validation-for="Qty" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
