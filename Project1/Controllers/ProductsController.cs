@@ -58,7 +58,7 @@ namespace Project1.Controllers
 
             return View(products);
         }
-        //Will not add Authorize until I find a email server.
+        //Will not add Authorize until I find an email server.
         // GET: Products/Create
         //[Authorize]
         public IActionResult Create()
