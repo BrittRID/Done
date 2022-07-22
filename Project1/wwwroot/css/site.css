@@ -68,7 +68,7 @@ body {
     grid-template-columns: subgrid;
     
 }
-
+/*nav bar for heading page*/
 .nav-link {
     list-style-type: none;
     position: sticky;
@@ -84,9 +84,17 @@ body {
     padding: 10px 20px;
     text-decoration: none;
 }
-
+    /*nav bar for heading page*/
 .nav-link:hover {
         background-color: moccasin;
         color: white;
     }
+.row {
+    border: 2px solid #8f8ea9;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: subgrid;
+}
 
