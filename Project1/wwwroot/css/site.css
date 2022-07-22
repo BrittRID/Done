@@ -69,5 +69,24 @@ body {
     
 }
 
+.nav-link {
+    list-style-type: none;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    display: block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
 
+.nav-link:hover {
+        background-color: moccasin;
+        color: white;
+    }
 
