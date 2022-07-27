@@ -86,15 +86,8 @@ body {
 }
     /*nav bar for heading page*/
 .nav-link:hover {
-        background-color: moccasin;
+        background-color: whitesmoke;
         color: white;
     }
-.row {
-    border: 2px solid #8f8ea9;
-    border-radius: 5px;
-    background-color: #fff4e6;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: subgrid;
-}
+
 
